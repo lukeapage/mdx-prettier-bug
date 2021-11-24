@@ -1,0 +1,28 @@
+import Heading from './heading';
+
+export const Text = ({ className, children }) => (
+    // use <section> instead of <div> so storybook doesn't style it automatically
+    <section className={className}>{children}</section>
+);
+
+<Meta title='Heading' component={Heading} />
+
+<Story
+    name='Heading'
+    parameters={{
+        docs: { disable: true },
+    }}
+    args={{
+        type: 'primary',
+        size: 'medium',
+        isCenter: false,
+        children: 'Heading',
+    }}
+>
+    {(args) => <Heading {...args} />}
+</Story>
+
+# Heading
+
+Headings...
+

@@ -1,0 +1,19 @@
+{
+    "name": "mdx-test",
+    "version": "1.0.0",
+    "description": "SaxoTrader",
+    "engines": {
+        "node": "~16.13.0"
+    },
+    "scripts": {
+        "prettier": "prettier",
+        "prettier:check": "prettier --check .",
+        "prettier:write": "prettier --write .",
+        "prettier:fix-changed": "pretty-quick --write --branch=origin/master"
+    },
+    "private": true,
+    "devDependencies": {
+        "@trivago/prettier-plugin-sort-imports": "3.1.1",
+        "prettier": "2.4.1"
+    }
+}
